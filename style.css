@@ -5,11 +5,31 @@ body {
     display: flex;
     flex-flow: row nowrap;
 }
+.wrapper {
+    width: 30rem;
+    background-color: aliceblue;
+    outline: 2px solid black;
+}
 .inpdiv {
-    margin-left: 64px;
+    float: right;
+    padding: 10px;
 }
 .bin {
     padding: 10px;
+    flex:1;
+    min-width: none;
+}
+.but {
+    flex: 1;
+}
+.inp {
+    width:10%
+}
+#top {
+    outline: 1px solid black;
+}
+#bot {
+    margin-top: 33px;
 }
 #signc {
     background-color: plum;
@@ -19,7 +39,4 @@ body {
 }
 #manc {
     background-color: blanchedalmond;
-}
-#binc {
-    background-color: aliceblue;
 }

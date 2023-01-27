@@ -6,16 +6,21 @@
         <script src="./floatingtobin32.js" type="text/javascript"></script>
     </head>
     <body>
-        <div class="bindiv">
-            <div class="bin"><br><p>Binary</p></div>
-            <div class="bin" id="signc">Sign<p id="sign">0</p></div>
-            <div class="bin" id="expc">Exponent<p id="exp">00000000</p></div>
-            <div class="bin" id="manc">Mantissa<p id="man">00000000000000000000000</p></div>
-            <div class="bin" id="binc">Binary<p id="bin">00000000000000000000000000000000</p></div>
-        </div>
-        <div class="inpdiv">
-            <input type="number" id="inp">
-            <input type="button" onclick="FloatToBin32()" value="Calculate">
+        <div class="wrapper">
+            <div class="bindiv" id="top">
+                <div class="bin"><br><p>Binary</p><p>Value</p></div>
+                <div class="bin" id="signc">Sign<p id="sign">0</p><p id="signv">+</p></div>
+                <div class="bin" id="expc">Exponent<p id="exp">00000000</p><p id="expv">2<sup>0</sup></p></div>
+                <div class="bin" id="manc">Mantissa<p id="man">00000000000000000000000</p><p id="manv">0</p></div>
+            </div>
+            <div class="inpdiv">
+                <input type="button" id="but" onclick="FloatToBin32()" value="Calculate">
+                <input type="number" id="inp" onkeyup="FloatToBin32()">
+            </div>
+            <div class="bindiv" id="bot">
+                <div class="bin"><p>Sum</p><p>Real</p><p>Hex</p></div>
+                <div class="bin"><p id="bin">00000000000000000000000000000000</p><p id="real">0</p><p id="hex">0x00000000</p></div>
+            </div>
         </div>
     </body>
 </html>
