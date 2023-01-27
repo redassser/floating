@@ -1,0 +1,25 @@
+body {
+    margin: 20%;
+}
+.bindiv {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.inpdiv {
+    margin-left: 64px;
+}
+.bin {
+    padding: 10px;
+}
+#signc {
+    background-color: plum;
+}
+#expc {
+    background-color: greenyellow;
+}
+#manc {
+    background-color: blanchedalmond;
+}
+#binc {
+    background-color: aliceblue;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Float->Binary</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./floatingtobin32.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="bindiv">
+            <div class="bin"><br><p>Binary</p></div>
+            <div class="bin" id="signc">Sign<p id="sign">0</p></div>
+            <div class="bin" id="expc">Exponent<p id="exp">00000000</p></div>
+            <div class="bin" id="manc">Mantissa<p id="man">00000000000000000000000</p></div>
+            <div class="bin" id="binc">Binary<p id="bin">00000000000000000000000000000000</p></div>
+        </div>
+        <div class="inpdiv">
+            <input type="number" id="inp">
+            <input type="button" onclick="FloatToBin32()" value="Calculate">
+        </div>
+    </body>
+</html>
