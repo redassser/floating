@@ -69,3 +69,28 @@ function FloatToBin64() {
     document.getElementById("dhex").innerHTML = (inp!=0) ? "0x"+BigInt("0b"+value.binary).toString(16) : "0x0000000000000000";
     return value;
 }
+var whichtype = 1, both = 0;
+function switchtype(x) {
+    if(x==1) {
+        if(whichtype==1) {
+            document.getElementById("switch").value = "Switch to Float"
+            document.getElementById("double").style.display = "block"
+            document.getElementById("doubletitle").style.display = "block";
+            document.getElementById("float").style.display = "none";
+            document.getElementById("floattitle").style.display = "none";
+            whichtype = 0;
+        } else {
+            document.getElementById("switch").value = "Switch to Double"
+            document.getElementById("double").style.display = "none";
+            document.getElementById("doubletitle").style.display = "none";
+            document.getElementById("float").style.display = "block";
+            document.getElementById("floattitle").style.display = "block";
+            whichtype = 1;
+        }
+    } else {
+        document.getElementById("double").style.display = "block"
+        document.getElementById("doubletitle").style.display = "block";
+        document.getElementById("float").style.display = "block";
+        document.getElementById("floattitle").style.display = "block";
+    }
+}

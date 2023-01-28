@@ -6,8 +6,13 @@
         <script src="./floatingtobin.js" type="text/javascript"></script>
     </head>
     <body>
-        <h1 class="title">32-bit float to Binary</h1>
-        <div class="wrapper">
+        <div class="header">
+            Made by Ryan Piedrahita
+            <input type="button" class="topbut" id="switchboth" onclick="switchtype(0)" value="Display Both">
+            <input type="button" class="topbut" id="switch" onclick="switchtype(1)" value="Switch to Double">
+        </div>
+        <h1 class="title" id="floattitle">32-bit float to Binary</h1>
+        <div class="wrapper" id="float">
             <div class="bindiv" id="top">
                 <div class="bin"><br><p>Binary</p><p>Value</p></div>
                 <div class="bin" id="signc">Sign<p id="sign">0</p><p id="signv">+</p></div>
@@ -23,7 +28,7 @@
                 <div class="bin"><p id="bin">00000000000000000000000000000000</p><p id="real">0</p><p id="hex">0x00000000</p></div>
             </div>
         </div>
-        <h1 class="title">64-bit double to Binary</h1>
+        <h1 class="title" id="doubletitle">64-bit double to Binary</h1>
         <div class="wrapper" id="double">
             <div class="bindiv" id="top">
                 <div class="bin"><br><p>Binary</p><p>Value</p></div>

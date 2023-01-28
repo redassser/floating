@@ -1,6 +1,11 @@
 html {
     background-color: rgb(180, 183, 197);
 }
+.header {
+    display: flex;
+   justify-content: center;
+   gap: 15px;
+}
 .bindiv {
     display: flex;
     flex-flow: row nowrap;
@@ -17,6 +22,10 @@ html {
 }
 #double {
     width: 43rem;
+    display: none;
+}
+#doubletitle {
+    display: none;
 }
 .inpdiv {
     float: right;
@@ -43,17 +52,17 @@ html {
     background-color: plum;
 }
 #dsignc {
-    background-color: rgb(165, 121, 165);
+    background-color: plum;
 }
 #expc {
     background-color: greenyellow;
 }
 #dexpc {
-    background-color: rgb(124, 184, 36);
+    background-color: greenyellow;
 }
 #manc {
     background-color: blanchedalmond;
 }
 #dmanc {
-    background-color: rgb(197, 182, 159);
+    background-color: blanchedalmond;
 }
