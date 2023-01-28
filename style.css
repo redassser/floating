@@ -1,22 +1,22 @@
 html {
     background-color: rgb(180, 183, 197);
 }
-body {
-    width: 100%;
-}
 .bindiv {
     display: flex;
     flex-flow: row nowrap;
 }
 .title {
-    margin-top: 10%;
     text-align: center;
+    margin-top: 30px;
 }
 .wrapper {
-    width: 30rem;
+    width: 27rem;
     background-color: aliceblue;
     outline: 2px solid black;
     margin: auto;
+}
+#double {
+    width: 43rem;
 }
 .inpdiv {
     float: right;
@@ -42,9 +42,18 @@ body {
 #signc {
     background-color: plum;
 }
+#dsignc {
+    background-color: rgb(165, 121, 165);
+}
 #expc {
     background-color: greenyellow;
 }
+#dexpc {
+    background-color: rgb(124, 184, 36);
+}
 #manc {
     background-color: blanchedalmond;
+}
+#dmanc {
+    background-color: rgb(197, 182, 159);
 }

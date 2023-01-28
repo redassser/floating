@@ -3,10 +3,10 @@
     <head>
         <title>Float->Binary</title>
         <link rel="stylesheet" href="./style.css">
-        <script src="./floatingtobin32.js" type="text/javascript"></script>
+        <script src="./floatingtobin.js" type="text/javascript"></script>
     </head>
     <body>
-        <h1 class="title">32-bit to Binary</h1>
+        <h1 class="title">32-bit float to Binary</h1>
         <div class="wrapper">
             <div class="bindiv" id="top">
                 <div class="bin"><br><p>Binary</p><p>Value</p></div>
@@ -21,6 +21,23 @@
             <div class="bindiv" id="bot">
                 <div class="bin"><p>Sum</p><p>Real</p><p>Hex</p></div>
                 <div class="bin"><p id="bin">00000000000000000000000000000000</p><p id="real">0</p><p id="hex">0x00000000</p></div>
+            </div>
+        </div>
+        <h1 class="title">64-bit double to Binary</h1>
+        <div class="wrapper" id="double">
+            <div class="bindiv" id="top">
+                <div class="bin"><br><p>Binary</p><p>Value</p></div>
+                <div class="bin" id="dsignc">Sign<p id="dsign">0</p><p id="dsignv">+</p></div>
+                <div class="bin" id="dexpc">Exponent<p id="dexp">00000000000</p><p id="dexpv">2<sup>0</sup></p></div>
+                <div class="bin" id="dmanc">Mantissa<p id="dman">000000000000000000000000000000000000000000000000000</p><p id="dmanv">0</p></div>
+            </div>
+            <div class="inpdiv">
+                <input type="button" id="dbut" onclick="FloatToBin64()" value="Calculate">
+                <input type="number" id="dinp" onkeyup="FloatToBin64()">
+            </div>
+            <div class="bindiv" id="bot">
+                <div class="bin"><p>Sum</p><p>Real</p><p>Hex</p></div>
+                <div class="bin"><p id="dbin">000000000000000000000000000000000000000000000000000000000000000</p><p id="dreal">0</p><p id="dhex">0x0000000000000000</p></div>
             </div>
         </div>
     </body>
