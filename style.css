@@ -1,10 +1,13 @@
-html {
-    background-color: rgb(180, 183, 197);
+body {
+    background-color: rgb(166, 168, 180);
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
 }
 .header {
     display: flex;
-   justify-content: center;
-   gap: 15px;
+    justify-content: center;
+    gap: 15px;
 }
 .bindiv {
     display: flex;
@@ -29,18 +32,32 @@ html {
 }
 .inpdiv {
     float: right;
-    padding: 10px;
+    padding: 12px;
+    width: 90%;
+    display: flex;
 }
 .bin {
     padding: 10px;
     flex:1;
     min-width: none;
 }
-.but {
-    flex: 1;
+#but, #dbut {
+    background-color: gainsboro;
+    border: 1px solid black;
 }
-.inp {
-    width:10%
+#dinp, #inp {
+    border: 1px solid black;
+    flex-grow: 1;
+}
+#but:hover, #dbut:hover {
+    background-color:darkgray;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
 }
 #top {
     outline: 1px solid black;
